@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.huhuhahahihi.SearchPlayerController">
+
+    <!-- Background Image -->
+    <children>
+        <ImageView fitHeight="622.0" fitWidth="904.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@searchbg.jpg" />
+            </image>
+        </ImageView>
+
+        <!-- Content -->
+        <VBox alignment="CENTER" spacing="20" style="-fx-padding: 30;">
+
+            <!-- Title -->
+            <Label style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: #FFD700; -fx-effect: dropshadow(gaussian, black, 5, 0.8, 0, 2);" text="Search Players" />
+
+            <!-- Search Options -->
+            <Button defaultButton="true" onAction="#searchByName" prefHeight="45.0" prefWidth="250.0" style="-fx-text-fill: white; -fx-font-size: 16; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 12; -fx-background-radius: 12; -fx-background-color: linear-gradient(to right, #1e3c72, #2a5298); -fx-cursor: hand; -fx-effect: dropshadow(gaussian, black, 3, 0.4, 1, 1);" text="By Player Name" />
+            <Button defaultButton="true" onAction="#searchByClubAndCountry" prefHeight="45.0" prefWidth="250.0" style="-fx-text-fill: white; -fx-font-size: 16; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 12; -fx-background-radius: 12; -fx-background-color: linear-gradient(to right, #1e3c72, #2a5298); -fx-cursor: hand; -fx-effect: dropshadow(gaussian, black, 3, 0.4, 1, 1);" text="By Club and Country" />
+            <Button defaultButton="true" onAction="#searchByPosition" prefHeight="45.0" prefWidth="250.0" style="-fx-text-fill: white; -fx-font-size: 16; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 12; -fx-background-radius: 12; -fx-background-color: linear-gradient(to right, #1e3c72, #2a5298); -fx-cursor: hand; -fx-effect: dropshadow(gaussian, black, 3, 0.4, 1, 1);" text="By Position" />
+            <Button defaultButton="true" onAction="#searchBySalaryRange" prefHeight="45.0" prefWidth="250.0" style="-fx-text-fill: white; -fx-font-size: 16; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 12; -fx-background-radius: 12; -fx-background-color: linear-gradient(to right, #1e3c72, #2a5298); -fx-cursor: hand; -fx-effect: dropshadow(gaussian, black, 3, 0.4, 1, 1);" text="By Salary Range" />
+            <Button defaultButton="true" onAction="#countryWisePlayerCount" prefHeight="45.0" prefWidth="250.0" style="-fx-text-fill: white; -fx-font-size: 16; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 12; -fx-background-radius: 12; -fx-background-color: linear-gradient(to right, #1e3c72, #2a5298); -fx-cursor: hand; -fx-effect: dropshadow(gaussian, black, 3, 0.4, 1, 1);" text="Country-wise player count" />
+
+            <!-- Back Button -->
+            <Button onAction="#backToMainMenu" prefHeight="45.0" prefWidth="250.0" style="-fx-text-fill: white; -fx-font-size: 16; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 12; -fx-background-radius: 12; -fx-background-color: linear-gradient(to right, #ff416c, #ff4b2b); -fx-cursor: hand; -fx-effect: dropshadow(gaussian, black, 3, 0.4, 1, 1);" text="Back to Main Menu" />
+
+        </VBox>
+    </children>
+</StackPane>

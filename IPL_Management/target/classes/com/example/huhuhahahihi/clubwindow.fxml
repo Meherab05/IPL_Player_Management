@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.image.Image?>
+<StackPane maxHeight="500.0" maxWidth="900.0" prefHeight="500.0" prefWidth="900.0" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.huhuhahahihi.ClubManagementController">
+   <!-- Background Image -->
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@homebg.jpg" />
+         </image>
+      </ImageView>
+      <!-- Foreground Content -->
+      <VBox alignment="CENTER" maxHeight="500.0" maxWidth="900.0" spacing="20" style="-fx-background-color: rgba(255, 255, 255, 0.8); -fx-padding: 20;">
+         <!-- Club Name Section -->
+         <Label fx:id="clubNameLabel" minHeight="-Infinity" minWidth="-Infinity" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Club Name: [Club]" />
+         <HBox prefHeight="35.0" prefWidth="878.0">
+            <children>
+               <TextField fx:id="name" prefHeight="35.0" prefWidth="817.0" promptText="Enter player name to request sell" />
+               <Button fx:id="bsclick" mnemonicParsing="false" onAction="#bsclick" prefHeight="35.0" prefWidth="78.0" text="Sell" />
+            </children>
+         </HBox>
+         <TextArea fx:id="playerss" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="307.0" prefWidth="860.0" />
+         <Button fx:id="toggle" mnemonicParsing="false" onAction="#toggle" prefHeight="35.0" prefWidth="147.0" text="Buy Players" />
+         <Button mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="57.0" text="Back" />
+      </VBox>
+   </children>
+</StackPane>

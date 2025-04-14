@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.huhuhahahihi.clubSearchController">
+    <children>
+        <!-- Input field for Club Name -->
+        <TextField fx:id="cl" layoutY="10.0" prefHeight="25.0" prefWidth="900.0" promptText="Enter Club Name" />
+
+        <!-- Buttons for each option arranged side by side -->
+        <Button fx:id="mxsal" layoutX="10.0" layoutY="50.0" mnemonicParsing="false" onAction="#maxSalary" prefHeight="40.0" prefWidth="214.0" text="Players with Max Salary" />
+        <Button fx:id="mxage" layoutX="243.0" layoutY="50.0" mnemonicParsing="false" onAction="#maxAge" prefHeight="40.0" prefWidth="214.0" text="Players with Max Age" />
+        <Button fx:id="mxht" layoutX="475.0" layoutY="50.0" mnemonicParsing="false" onAction="#maxHeight" prefHeight="40.0" prefWidth="194.0" text="Players with Max Height" />
+        <Button fx:id="ttsal" layoutX="686.0" layoutY="50.0" mnemonicParsing="false" onAction="#total" prefHeight="40.0" prefWidth="200.0" text="Total Salary" />
+
+        <!-- Back Button -->
+        <Button layoutX="419.0" layoutY="109.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="100.0" text="Back" />
+
+        <!-- Output TextArea -->
+        <TextArea fx:id="playerss" layoutY="160.0" prefHeight="341.0" prefWidth="900.0" wrapText="true" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.huhuhahahihi.ClubController">
+    <!-- Background Image -->
+    <ImageView fitHeight="622.0" fitWidth="904.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@searchbg.jpg" />
+        </image>
+    </ImageView>
+
+    <!-- Content -->
+    <VBox alignment="CENTER" minHeight="500.0" minWidth="900.0" spacing="20" style="-fx-padding: 20; -fx-background-color: transparent;">
+        <!-- Title Label -->
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Club Management" />
+
+        <!-- Input Fields Section -->
+        <GridPane alignment="CENTER" hgap="10" vgap="10">
+            <Label text="Club Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="clubNameField" promptText="Enter your club name" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+
+        <!-- Buttons Section -->
+        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="206.0" spacing="20">
+            <Button fx:id="clubLoginButton" onAction="#onLogin" prefHeight="45.0" prefWidth="133.0" style="-fx-font-size: 16px; -fx-background-color: #43cea2; -fx-text-fill: white; -fx-padding: 10; -fx-border-radius: 8; -fx-background-radius: 8;" text="Login" />
+            <Button fx:id="registerClubButton" onAction="#onRegister" prefHeight="45.0" prefWidth="117.0" style="-fx-font-size: 16px; -fx-background-color: #1155cc; -fx-text-fill: white; -fx-padding: 10; -fx-border-radius: 8; -fx-background-radius: 8;" text="Register" />
+        </HBox>
+    </VBox>
+</StackPane>
